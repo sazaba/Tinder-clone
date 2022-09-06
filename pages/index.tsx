@@ -1,6 +1,5 @@
 import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { Toaster } from "react-hot-toast";
 import Feed from "../Components/Feed";
 import Sidebar from "../Components/Sidebar";
@@ -12,7 +11,7 @@ interface Props {
   tweets: Tweet[];
 }
 
-const Home: NextPage = ({ tweets }: Props) => {
+const Home: NextPage<Props> = ({ tweets }: Props) => {
   return (
     <div className="lg:max-w-6xl mx-auto max-h-screen ">
       <Head>
