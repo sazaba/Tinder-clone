@@ -28,4 +28,9 @@ module.exports = {
         "plugin:react/recommended",
       	"next/core-web-vitals"
     ],
+    "parserOptions": [
+        {
+        "project": ["path/to/your/tsconfig/file"] 
+        }       
+],
 };
